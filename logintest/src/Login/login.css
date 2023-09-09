@@ -1,0 +1,38 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundBox {
+    width: 650px;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputstyle {
+    width: 80%;
+    height: 10%;
+    background-color: blueviolet;
+}
+
+.buttonStyle {
+    width: 10%;
+    height: 10%;
+    background-color: blue;
+}
+
+.modalStyle {
+    width: 700px;
+    height: 500px;
+    background-color: rgb(45, 255, 146);
+    z-index: 555;
+    position: absolute;
+}

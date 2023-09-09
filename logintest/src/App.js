@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Login from './Login/login';
+import { Route, BrowserRouter, Routes } from "react-router-dom"; // Routes를 import 추가
 
 class App extends React.Component {
 
@@ -15,13 +17,15 @@ class App extends React.Component {
     };
   }
   render() {
-    const {username} = this.state;
     return(
+      <BrowserRouter>
       <div className='App'>
-        <header className='App-header'>
-          {username ? `Hello ${username}`: 'HelloWorld'};
-        </header>
-      </div>
+        <Routes>
+          <Route path='/' element={<Login />} />
+        </Routes>
+      </div>   
+      </BrowserRouter>
+     
     );
   }
 }
