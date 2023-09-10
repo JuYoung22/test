@@ -36,3 +36,13 @@
     z-index: 555;
     position: absolute;
 }
+
+.porflieBox {
+    width: 70%;
+    height: 50%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

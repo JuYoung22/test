@@ -30,7 +30,8 @@ function Login(){
                 // 확인용 모달창
                 setOpenModal(true);
                 // 응답데이터를 상태 변수에 저장.
-                setModalMessage(response.data.inputId+'님, 로그인 성공');
+                setModalMessage(response.data.inputId+'님, 안녕하세요');
+               
             }else {
                 console.log('로그인 실패');
             }
@@ -63,8 +64,8 @@ function Login(){
             {openModal && 
                 // 모달 컴포넌트에 응답 데이터 전달 + 모달창 띄우기
             <Modal modalMessage={modalMessage} setOpenModal={setOpenModal}/>}
-            
         </div>
+
     )
 }
 
