@@ -1,16 +1,20 @@
-import React from 'react';
+import React,{ useState, useEffect } from 'react';
 import './App.css';
-import Login from './Login/login';
-import Profile from './Login/profile';
-import { Route, BrowserRouter, Routes } from "react-router-dom"; // Routes를 import 추가
+import Join from './user/join';
+import Profile from './user/profile';
+import { Route, BrowserRouter, Routes  } from "react-router-dom"; // Routes를 import 추가
 
 function App() {
-    return(
+  const login = localStorage.getItem('isLogin');
+  
+
+  return(
       <BrowserRouter>
       <div className='App'>
+         {/* 로그인 상태에 따른 컴포넌트 렌더링 */}
         <Routes>
-          <Route path='/' element={<Login />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/' element={<Join />} />  
+            <Route path='/profile' element={<Profile />} />
         </Routes>
       </div>   
       </BrowserRouter>
