@@ -5,7 +5,7 @@ import Profile from './user/profile';
 import { Route, BrowserRouter, Routes  } from "react-router-dom"; // Routes를 import 추가
 
 function App() {
-  const login = localStorage.getItem('isLogin');
+  
   
 
   return(
